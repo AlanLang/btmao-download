@@ -1,0 +1,27 @@
+{
+    "compilerOptions": {
+        "sourceMap": true,
+        "target": "es2017",
+        "module": "es2015",
+        "moduleResolution": "node",
+        "lib": [
+            "es2017",
+            "dom"
+        ],
+        "declaration": true,
+        "experimentalDecorators": true,
+        "outDir": "./dist",
+        "baseUrl": ".",
+        "noImplicitAny": true,
+        "noFallthroughCasesInSwitch": true,
+        "skipLibCheck": true,
+        "paths": {
+            "ui": ["./src/ui"],
+            "ReportCst": ["./private/constants"]
+        }
+    },
+    "include": [
+        "src/*.ts",
+        "types/globals.d.ts"
+    ]
+}

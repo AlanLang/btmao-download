@@ -1,0 +1,53 @@
+{
+  "name": "btmao-download",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server -p --progress --config=webpack/webpack.dev.js --mode development --open",
+    "build": "tsc -d --emitDeclarationOnly && webpack -p --progress --config=webpack/webpack.prod.js --mode production",
+    "eslint": "eslint './*.js' './**/*.js' './**/*.ts'"
+  },
+  "keywords": [
+    "btmao"
+  ],
+  "author": "alan",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "7.4.5",
+    "@babel/plugin-proposal-class-properties": "7.5.0",
+    "@babel/plugin-proposal-decorators": "7.4.4",
+    "@babel/plugin-transform-block-scoping": "7.5.5",
+    "@babel/plugin-transform-classes": "7.5.5",
+    "@babel/plugin-transform-modules-commonjs": "7.5.0",
+    "@babel/plugin-transform-proto-to-assign": "7.5.5",
+    "@babel/polyfill": "7.4.4",
+    "@babel/preset-env": "7.4.5",
+    "@babel/preset-typescript": "7.3.3",
+    "@types/jquery": "^3.3.33",
+    "@types/js-base64": "^2.3.1",
+    "@typescript-eslint/eslint-plugin": "1.7.0",
+    "@typescript-eslint/parser": "1.7.0",
+    "babel-loader": "8.0.6",
+    "eslint": "5.16.0",
+    "eslint-plugin-jest": "^22.17.0",
+    "fork-ts-checker-webpack-plugin": "^1.5.0",
+    "html-webpack-plugin": "^3.2.0",
+    "husky": "1.3.1",
+    "source-map-loader": "^0.2.4",
+    "typescript": "^3.6.2",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.8",
+    "webpack-dev-server": "^3.8.0",
+    "webpack-merge": "^4.2.2",
+    "webpack-userscript": "^2.5.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "npm run eslint"
+    }
+  },
+  "dependencies": {
+    "js-base64": "^2.5.2"
+  }
+}
