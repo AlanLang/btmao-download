@@ -9,4 +9,4 @@ package-lock.json
 yarn-error.log
 .history/
 coverage/
-yarn.lcok
+yarn.lock
