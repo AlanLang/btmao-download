@@ -1,11 +1,11 @@
 {
   "name": "btmao-download",
   "version": "0.0.1",
-  "description": "",
+  "description": "bt猫下载链接获取工具",
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server -p --progress --config=webpack/webpack.dev.js --mode development --open",
-    "build": "tsc -d --emitDeclarationOnly && webpack -p --progress --config=webpack/webpack.prod.js --mode production",
+    "build": "tsc -d --emitDeclarationOnly && webpack -p --progress --config=webpack/webpack.prod.js --mode development",
     "eslint": "eslint './*.js' './**/*.js' './**/*.ts'"
   },
   "keywords": [
