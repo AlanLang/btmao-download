@@ -16,7 +16,7 @@ module.exports = merge.smart(common, {
               name: 'bi猫下载链接获取工具',
               namespace: 'alanlang',
               description: '方便获取bt猫下载链接',
-              match: 'https://www.btmao.cc/*'
+              match: ['https://www.btmao.cc/*', 'http://www.tldm.net/*']
             }
           })
     ],
