@@ -9,6 +9,7 @@ window.onload = () => {
         textarea.value = urls.join('\n');
         textarea.style.display = isOpen ? 'none' : 'block';
         button.textContent = isOpen ? '生成' : '关闭';
+        button.style.backgroundColor = 'white';
         isOpen = !isOpen;
         if (isOpen) {
             textarea.select();
@@ -37,6 +38,7 @@ function createTextarea() {
     textarea.style.width = '500px';
     textarea.style.height = '300px';
     textarea.style.display = 'none';
+    textarea.style.backgroundColor = 'white';
     textarea.wrap = 'off';
     document.body.appendChild(textarea);
     
