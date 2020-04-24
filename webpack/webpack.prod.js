@@ -13,10 +13,10 @@ module.exports = merge.smart(common, {
         }),
         new WebpackUserscript({
             headers: {
-              name: 'bi猫下载链接获取工具',
+              name: '下载链接获取工具',
               namespace: 'alanlang',
-              description: '方便获取bt猫下载链接',
-              match: ['https://www.btmao.cc/*', 'http://www.tldm.net/*']
+              description: '方便获取视频网站下载链接',
+              match: ['https://www.btmao.cc/*', 'http://www.tldm.net/*', 'https://www.xl720.com/thunder/*']
             }
           })
     ],
