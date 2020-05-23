@@ -16,7 +16,7 @@ module.exports = merge.smart(common, {
               name: '下载链接获取工具',
               namespace: 'alanlang',
               description: '方便获取视频网站下载链接',
-              match: ['https://www.btmao.cc/*', 'http://www.tldm.net/*', 'https://www.xl720.com/thunder/*']
+              match: ['https://www.btmao.cc/*', 'http://www.tldm.net/*', 'https://www.xl720.com/thunder/*', 'http://www.btbuluo.com/*']
             }
           })
     ],
